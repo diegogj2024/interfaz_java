@@ -69,6 +69,7 @@ public class Formulario_usuario extends javax.swing.JFrame {
         Boton_registrar.setBackground(new java.awt.Color(255, 0, 0));
         Boton_registrar.setText("Registrar");
         Boton_registrar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Boton_registrar.setEnabled(false);
         Boton_registrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Boton_registrarActionPerformed(evt);
