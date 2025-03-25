@@ -183,6 +183,8 @@ public class Formulario_usuario extends javax.swing.JFrame {
         String auxcedula = Cedula.getText();
         String auxcorreo = Correo.getText();
         Controlador objcontrolador=new Controlador(auxnombre,auxcedula,auxcorreo);
+        Mensaje objMensaje=new Mensaje();
+        objMensaje.setVisible(true);
     }//GEN-LAST:event_Boton_registrarActionPerformed
 
     private void validar_Campos(){

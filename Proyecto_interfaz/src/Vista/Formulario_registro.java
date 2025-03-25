@@ -1,6 +1,7 @@
 package Vista;
 
 import Controlador.Controlador;
+import javax.security.auth.login.AccountExpiredException;
 
 
 public class Formulario_registro extends javax.swing.JFrame {
@@ -171,8 +172,11 @@ public class Formulario_registro extends javax.swing.JFrame {
         String auxserial=Campo_serial.getText();
         String auxmodelo=Campo_Modelo.getText();
         Controlador objcontrolador=new Controlador(auxserial,auxmodelo);
-        Formulario_usuario objFormulario_usuario=new Formulario_usuario();
+        Mensaje objMensaje =new Mensaje();
+        objMensaje.setVisible(true);
+        Formulario_usuario objFormulario_usuario = new Formulario_usuario();
         objFormulario_usuario.setVisible(true);
+        
     }//GEN-LAST:event_BotonRegistroActionPerformed
 
     private void validar_Campos(){
